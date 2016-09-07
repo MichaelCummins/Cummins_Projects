@@ -6,20 +6,21 @@
  * due date: September 7,2016
  * version: 1.0
  */
-import java.util.scanner;
+import java.util.Scanner;
 
 
 public class sums{
   public static void main(String[] args){
-      System.out.println("Enter a number between 0 and 1000:");
-      int number1 = input.nextint();
-      int number2 = input.nextint();
-      int number3 = input.nextint();
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter a number between 0 and 1000:");
+    int number1 = input.nextInt();
+    int number2 = input.nextInt();
+    int number3 = input.nextInt();
       
       
-      double total = (number1 + number2 + number3);
+    double total = (number1 + number2 + number3);
       
       
-      System.out.println("The sum of the digits is"+total);     
+    System.out.println("The sum of the digits is "+total);     
   }
 }

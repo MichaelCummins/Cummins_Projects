@@ -6,27 +6,28 @@
  * due date: September 7,2016
  * version: 1.0
  */
-import java.util.scanner;
+import java.util.Scanner;
 
 
-public class sums{
+public class percentage{
   public static void main(String[] args){
-  System.out.println("Please enter the following as percentage...");
+    Scanner input= new Scanner(System.in);
+    System.out.println("Please enter the following as percentage...");
   
-  System.out.println("Midterm exam: ");
-  double midterm = input.nextDouble;
+    System.out.println("Midterm exam: ");
+    double midterm = input.nextDouble();
       
-  System.out.println("Final exam: ");
-  double fin = input.nextDouble;
+    System.out.println("Final exam: ");
+    double fin = input.nextDouble();
       
-  System.out.println("Projects: ");
-  double projects = input.nextDouble;
+    System.out.println("Projects: ");
+    double projects = input.nextDouble();
       
-  System.out.println("Homework and labs: ");
-  double homework = input.nextDouble;
+    System.out.println("Homework and labs: ");
+    double homework = input.nextDouble();
        
-  double grade =((midterm+fin+projects+homework)/4);  
+    double grade =((midterm+fin+projects+homework)/4);  
       
-  System.out.println("Your final grade is: "+grade+"%");
+    System.out.println("Your final grade is: "+grade+"%");
   }
 }

@@ -11,9 +11,9 @@ public class pattern{
     String j ="J";
     String a ="A";
     String v ="V";
-      System.out.println("    "+j+"    "+a+"    "+v+"     "+v+"     "+a+);
-      System.out.println("    "+j+"  "+a+""+a+"  "+v+"   "+v+"    "+a+""+a+);
-      System.out.println(""j+""+j+" "+a+a+a+a+"   "+v+""+v+"      "+a+a+a+a);
-      System.out.println(""+j++j+" "+a+"  "+a+"      "+v+"       "+a+"  "+a+);
+    System.out.println("  "+j+"  "+a+"   "+v+"     "+v+"      "+a);
+    System.out.println("  "+j+"  "+a+""+a+"   "+v+"   "+v+"      "+a+""+a);
+    System.out.println(""+j+ " "+j+" "+a+a+a+a+"   "+v+" "+v+"      "+a+a+a+a);
+    System.out.println(""+j+j+"  "+a+"  "+a+"    "+v+"       "+a+"  "+a);
   }
 }

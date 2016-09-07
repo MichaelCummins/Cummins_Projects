@@ -6,7 +6,7 @@
  * due date: September 7,2016
  * version: 1.0
  */
-import java.util.scanner;
+import java.util.Scanner;
 
 
 public class conversion{
@@ -16,7 +16,7 @@ public class conversion{
     
     System.out.println("Enter a degree in Celsius ");
     
-    double temperature = in.nextDouble();
+    double temperature = input.nextDouble();
     
     double newTemperature =((9.0/5.0)*temperature+32);
     System.out.println(temperature +" Celsius is "+newTemperature+" Fahrenheit");
