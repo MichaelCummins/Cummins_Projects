@@ -9,6 +9,7 @@
 import java.util.Scanner;
 
 
+// == classes should start with an upper case letter
 public class finance{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
@@ -20,7 +21,7 @@ public class finance{
 
       
     //compute total
-    double newGratuity = (gratuity/subtotal); 
+    double newGratuity = (gratuity/subtotal); // == this is wrong 
     double total = (newGratuity+subtotal);
   
     //results

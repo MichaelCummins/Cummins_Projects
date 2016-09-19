@@ -9,6 +9,7 @@
 import java.util.Scanner;
 
 
+// == classes should start with an upper case letter
 public class percentage{
   public static void main(String[] args){
     Scanner input= new Scanner(System.in);

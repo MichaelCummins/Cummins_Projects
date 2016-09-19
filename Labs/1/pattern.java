@@ -6,6 +6,7 @@
  * due date: September 7,2016
  * version: 1.0
  */
+// == classes should start with an upper case letter
 public class pattern{
   public static void main(String[] args){
     String j ="J";

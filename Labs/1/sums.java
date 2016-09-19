@@ -9,12 +9,16 @@
 import java.util.Scanner;
 
 
+// == classes should start with an upper case letter
 public class sums{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a number between 0 and 1000:");
     int number1 = input.nextInt();
-    int number2 = input.nextInt();
+    int number2 = input.nextInt(); // == this is wrong, you should 
+                                   //    receive only one number, 
+                                   //    which you did in the previous 
+                                   //    line
     int number3 = input.nextInt();
       
       

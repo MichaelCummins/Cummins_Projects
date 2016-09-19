@@ -8,7 +8,7 @@
  */
 import java.util.Scanner;
 
-
+// == classes should start with an upper case letter
 public class conversion{
   public static void main(String[] args){ 
     
