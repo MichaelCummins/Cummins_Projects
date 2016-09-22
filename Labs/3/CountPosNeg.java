@@ -16,6 +16,7 @@ public class CountPosNeg{
     int neg= 0;
     double tot = 0;
     int count = 0;
+    double avg;
     int num=input.nextInt();
       
     if(num==0){
@@ -30,7 +31,7 @@ public class CountPosNeg{
         neg++;
       num = input.nextInt();
     }  
-    while(num!=0){
+    while(num!=0);{
       avg=tot/((double)pos+neg);
       tot += num;
       count++;
