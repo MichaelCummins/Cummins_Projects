@@ -18,8 +18,6 @@ public class ComplexItem extends Item {
 	 * If the user has two items that go together, the user can make a new item.
 	 * The items must be present in the user's inventory.
 	 * @param locations 
-	 * The canMake method will check if the user is at a specific location, such as the cave
-	 * where making a flashlight will call the angryBear method.
 	 */
 	
   Boolean canMake(Player User, Item[] items) {
