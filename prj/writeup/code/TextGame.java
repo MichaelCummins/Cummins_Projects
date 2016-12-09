@@ -29,7 +29,7 @@ public class TextGame {
 	};
 	
 	// instance of a ComplexItem
-	static ComplexItem sweater = new ComplexItem ("Sweater", "Lay it down somewhere.", 0, items[2], items[8]);
+	static ComplexItem sweater = new ComplexItem ("Sweater", "Lay it down somewhere.", 0, items[2], items[7]);
 	
 	
 	/**
@@ -97,7 +97,7 @@ public class TextGame {
 		 */
 		// Beginning of game
 		System.out.println("Welcome to Castle Zyrosa");
-  System.out.println("-------------------------");
+        System.out.println("-------------------------");
 		System.out.print("I will be your guide" 
    +"\nJust call me Steward"
    +"\nWhat is your name visitor? ");
