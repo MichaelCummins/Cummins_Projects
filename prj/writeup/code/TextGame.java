@@ -125,12 +125,14 @@ public class TextGame {
 			locations[1].item.remove(items[3]); // remove key from foyer
 		}		
   System.out.println("");
-		System.out.println(User.name + ". You are at the " 
-				+ locations[User.location].name 
-				+ ". " + locations[User.location].description);
+  System.out.println(User.name + ". You are at the " 
+				    + locations[User.location].name 
+				    + ". " + locations[User.location].description);
   System.out.println("If you require help from Steward enter h");
   System.out.println("");
   displayHelp();
+  System.out.println("");
+  System.out.println("Your goal is to collect all of the times in the casle");
 		
 		/**
 		 * This while loop repeatedly asks the user for a command.
