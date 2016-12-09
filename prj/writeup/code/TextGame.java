@@ -90,11 +90,6 @@ public class TextGame {
 		
 		Scanner keyboard = new Scanner(System.in);
 		String userInput; // used for entering commands
-						
-		/**
-		 * In the beginning of the game, the user is greeted and asked to supply a name and weapon.
-		 * The user starts at Locale 4, which is the Desert.
-		 */
 		// Beginning of game
 		System.out.println("Welcome to Castle Zyrosa");
         System.out.println("-------------------------");
