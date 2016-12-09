@@ -29,7 +29,7 @@ public class TextGame {
 	};
 	
 	// instance of a ComplexItem
-	static ComplexItem sweater = new ComplexItem ("Sweater", "Lay it down somewhere.", 0, items[2], items[7]);
+	static ComplexItem sweater = new ComplexItem ("sweater", "Lay it down somewhere.", 0, items[2], items[7]);
 	
 	
 	/**
@@ -132,7 +132,8 @@ public class TextGame {
   System.out.println("");
   displayHelp();
   System.out.println("");
-  System.out.println("Your goal is to collect all of the times in the casle");
+  System.out.println("Your goal is to collect all of the times in the casle"
+                    +"\nOr make the Sweater while in the stables to win the game");
 		
 		/**
 		 * This while loop repeatedly asks the user for a command.
