@@ -27,7 +27,7 @@ public class ComplexItem extends Item {
       if (item1Pass(User) && (item2Pass(User))) {			
       // the ComplexItem is made
         System.out.println("You have made a " + TextGame.itemName + ".");
-      // if the user makes the sweater at the dungeon, the player wins the game
+      // if the user makes the sweater at the stables, the player wins the game
         if (TextGame.itemName.equals("sweater") && User.location == 8) {
           Player.winGame(User);
         } 
