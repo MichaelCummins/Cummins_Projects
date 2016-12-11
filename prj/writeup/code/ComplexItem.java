@@ -5,7 +5,7 @@ public class ComplexItem extends Item {
     * @param description
     * @param value
     */
-	
+  
   // item1 and item2 are the required items to make a ComplexItem
   Item item1, item2;
 
@@ -13,18 +13,18 @@ public class ComplexItem extends Item {
     super(name, description, value);
     this.item1 = item1;
     this.item2 = item2;
-  }	
-	/**
-	 * If the user has two items that go together, the user can make a new item.
-	 * The items must be present in the user's inventory.
-	 * @param locations 
-	 */
-	
+  }  
+  /**
+   * If the user has two items that go together, the user can make a new item.
+   * The items must be present in the user's inventory.
+   * @param locations 
+   */
+  
   Boolean canMake(Player User, Item[] items) {
     //if the user has the required items
-    if (User.inventory.contains(this.item1) && User.inventory.contains(this.item2)) {	
+    if (User.inventory.contains(this.item1) && User.inventory.contains(this.item2)) {  
       // if both items have uses remaining (if applicable)
-      if (item1Pass(User) && (item2Pass(User))) {			
+      if (item1Pass(User) && (item2Pass(User))) {      
       // the ComplexItem is made
         System.out.println("You have made a " + TextGame.itemName + ".");
       // if the user makes the sweater at the stables, the player wins the game
@@ -35,11 +35,11 @@ public class ComplexItem extends Item {
         return true;
       }
     } else {
-    System.out.println("You cannot make the " + TextGame.itemName + ".");
+      System.out.println("You cannot make the " + TextGame.itemName + ".");
     }
     return false;
   }
-	
+  
   /**
     * Checks to see if the item is a limited use item. If it is, then the method returns true.
     * If the item is a limited use item, the use() method checks to see if there are uses remaining.
@@ -48,14 +48,14 @@ public class ComplexItem extends Item {
     * @return
     */
   Boolean item1Pass (Player User) {
-		
-  // if the item is not a LimitedUseItem
+    
+    // if the item is not a LimitedUseItem
     if (!(this.item1 instanceof LimitedUseItem)) {
       return true;
-  // it is a LimitedUseItem
+      // it is a LimitedUseItem
     } 
     else {
-  // if there are uses remaining
+    // if there are uses remaining
     if (LimitedUseItem.use((LimitedUseItem) this.item1)) {
       return true;
       }
@@ -64,7 +64,7 @@ public class ComplexItem extends Item {
   }
 
   Boolean item2Pass (Player User) {
-		
+    
   // if the item is not a LimitedUseItem
     if (!(this.item2 instanceof LimitedUseItem)) {
       return true;
@@ -77,7 +77,7 @@ public class ComplexItem extends Item {
     }
     return false;
   }
-	
+  
   void rewardPlayer(Player User) {
     // reward the player for making a ComplexItem
     if (User.actionCount >= 10) {
@@ -85,5 +85,5 @@ public class ComplexItem extends Item {
     } else {
     User.actionCount = 0;
     }
-  }	
+  }  
 }

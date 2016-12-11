@@ -9,7 +9,7 @@ public class SecureLocale extends Locale {
     * @param User
     * @return Returns true if the user has the required item in the inventory
     */
-	
+  
   Boolean canEnter (Player User) {
     if (User.inventory.contains(this.requiredItem)) {
       return true;
